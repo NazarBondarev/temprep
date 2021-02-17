@@ -58,7 +58,7 @@ banner = """
 
 ################################################
 qiwi_token = '72851acc7f04ec59539741464316f111'
-qiwi_phone = '380997992161'
+qiwi_phone = '380508821710'
 price = 100
 ###############Настройка оплаты qiwi############
 
@@ -2791,7 +2791,7 @@ def callback_inline(call):
             
             Кол-во призовых мест: 3
             
-            После выполнения всех условий розыгрыша - писать @kakoyta_chel19 за получением приватной ссылки на участи.''', disable_web_page_preview=True, 
+            После выполнения всех условий розыгрыша - писать @Shashashamota за получением приватной ссылки на участи.''', disable_web_page_preview=True, 
                      parse_mode='HTML')
             
         elif call.data == 'button4':
@@ -3043,7 +3043,7 @@ def handle_message_received(message):
 
         elif text == '▪️Информация▪️':
             bot.send_message(chat_id,
-                             'Владелец бота: @Shashashamota \nНа счёт рекламы писать: @kakoyta_chel19 \nНашли баг? Пишите: @Shashashamota \n\nПомощь /help\nСоглащения /tos', parse_mode='html')
+                             'Владелец бота: @Shashashamota \nНа счёт рекламы писать: @Shashashamota \nНашли баг? Пишите: @Shashashamota \n\nПомощь /help\nСоглащения /tos', parse_mode='html')
 
         elif text == '〰️ Деанон':
             bot.send_message(chat_id,
