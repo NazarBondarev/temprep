@@ -336,7 +336,7 @@ def start(message):
 
 
 
-    buttons_to_add = [boom, stop, deanon, info, stats, private, spons, voxgiftbutton]
+    buttons_to_add = [boom, stop, info, stats, private]
 
     keyboard.add(*buttons_to_add)
 
