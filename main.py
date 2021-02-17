@@ -30,7 +30,7 @@ ADMIN_CHAT_ID = 366954921
 ADMIN_CHAT_ID1 = 366954921
 VOXDOX_CHAT_ID = 366954921
 
-group_id = -520738483
+group_id = -1001287289932
 
 users_amount = [0]
 threads = list()
