@@ -348,7 +348,7 @@ def start(message):
 
     global inl_keyboard
     inl_keyboard = types.InlineKeyboardMarkup()
-    s = types.InlineKeyboardButton(text='Подписаться', url=url.read())
+    s = types.InlineKeyboardButton(text='Подписаться', url="https://t.me/shamotaspam")
     inl_keyboard.add(s)
     if user_status == 'member' or user_status == 'administrator' or user_status == 'creator':
 	    bot.send_message(message.chat.id, 'Привет, бомбер готов к атаке 🧨', reply_markup=keyboard)
