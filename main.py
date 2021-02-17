@@ -58,7 +58,7 @@ banner = """
 
 ################################################
 qiwi_token = '72851acc7f04ec59539741464316f111'
-qiwi_phone = '79826707111'
+qiwi_phone = '380997992161'
 price = 100
 ###############Настройка оплаты qiwi############
 
@@ -306,22 +306,7 @@ def subchan(message):
     bot.send_message(message.chat.id, '😍 Ссылка обновлена')
 
 
-def postsRES():
-    f = open("friend.txt", mode="w", encoding="utf-8")
-    f.write("""
-       🤪 Реклама - рассылка:
-             🤪 Цена: 150₽
-             🤪 Каждый пользователь получит уведомление с вашим текстом.
 
-             🤪 Реклама - 🤝 Наш партнёр
-             🙃 24 часа (1 день) + 1 рассылка - 250₽
-             😍 48 часов (2 дня) + 2 рассылка - 350₽
-             🥰 120 часов (5 дней) + 3 рассылка - 450₽
-             🤩 Ваш текст будет во вкладке "🌚 Наш партнер"
-
-             🤩 Наш канал: @slivmens
-             ✴️ Отзывы о покупке рекламы: @OtziviDarkBomber""")
-    f.close()
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -344,12 +329,12 @@ def start(message):
     keyboard = types.ReplyKeyboardMarkup(row_width=3, resize_keyboard=True)
     boom = types.KeyboardButton(text='💣 SPAM')
     stop = types.KeyboardButton(text='✖️ Стоп')
-    deanon = types.KeyboardButton(text='〰️ Деанон')
+
     info = types.KeyboardButton(text='▪️Информация▪️')
     stats = types.KeyboardButton(text='◾Статистика◾')
     private = types.KeyboardButton(text='ПРИВАТ ⚫')
-    spons = types.KeyboardButton(text='НАШ ПАРТНЁР®️')
-    voxgiftbutton = types.KeyboardButton(text='Подарок Воксу')
+
+
 
     buttons_to_add = [boom, stop, deanon, info, stats, private, spons, voxgiftbutton]
 
@@ -3058,7 +3043,7 @@ def handle_message_received(message):
 
         elif text == '▪️Информация▪️':
             bot.send_message(chat_id,
-                             'Владелец бота: @kakoyta_chel19 \nНа счёт рекламы писать: @kakoyta_chel19 \nНашли баг? Пишите: @kakoyta_chel19 \n\nПомощь /help\nСоглащения /tos', parse_mode='html')
+                             'Владелец бота: @Shashashamota \nНа счёт рекламы писать: @kakoyta_chel19 \nНашли баг? Пишите: @Shashashamota \n\nПомощь /help\nСоглащения /tos', parse_mode='html')
 
         elif text == '〰️ Деанон':
             bot.send_message(chat_id,
