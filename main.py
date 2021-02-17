@@ -2970,10 +2970,8 @@ def handle_message_received(message):
     info = types.KeyboardButton(text='▪️Информация▪️')
     stats = types.KeyboardButton(text='◾Статистика◾')
     private = types.KeyboardButton(text='ПРИВАТ ⚫')
-    spons = types.KeyboardButton(text='НАШ ПАРТНЁР®️')
-    voxgiftbutton = types.KeyboardButton(text='Подарок Воксу')
 
-    buttons_to_add = [boom, stop, deanon, info, stats, private, spons, voxgiftbutton]
+    buttons_to_add = [boom, stop, info, stats, private]
 
     keyboard.add(*buttons_to_add)
 
