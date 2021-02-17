@@ -2970,7 +2970,12 @@ def callback_inline(call):
         elif call.data == "startRUvip1":
             bot.send_message(message.chat.id, "Временно отключено")
 
-       
+
+@bot.message_handler(commands=['add'])
+def addnewotadmin(message):
+    add_vip(message.from_user.id)
+ 
+
 @bot.message_handler(content_types=['text'])
 def handle_message_received(message):
     keyboard = types.ReplyKeyboardMarkup(row_width=3, resize_keyboard=True)
